@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "f292031d-8e81-4415-90c1-80cb02db202d",
+		"name": "EShopMicroservices",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4851504"
+	},
+	"item": [
+		{
+			"name": "Catalog",
+			"item": [
+				{
+					"name": "Get Product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{catalog_url}}/products",
+							"host": [
+								"{{catalog_url}}"
+							],
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Product By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{catalog_url}}/products/d8c44912-5075-4779-bacb-2f21afc71de2",
+							"host": [
+								"{{catalog_url}}"
+							],
+							"path": [
+								"products",
+								"d8c44912-5075-4779-bacb-2f21afc71de2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Basket",
+			"item": []
+		},
+		{
+			"name": "Discount",
+			"item": []
+		},
+		{
+			"name": "Ordering",
+			"item": []
+		}
+	]
+}
