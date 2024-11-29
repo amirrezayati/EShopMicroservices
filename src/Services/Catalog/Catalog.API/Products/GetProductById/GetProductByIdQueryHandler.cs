@@ -3,7 +3,7 @@ using Catalog.API.Products.GetProducts;
 
 namespace Catalog.API.Products.GetProductById
 {
-    public class GetProductByIdQueryHandler(
+    internal class GetProductByIdQueryHandler(
         IDocumentSession _documentSession,
         ILogger<GetProductByIdQueryHandler> _logger) : IQueryHandler<GetProductByIdQuery, GetProductByIdResult>
     {
